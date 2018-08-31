@@ -2,24 +2,29 @@
   "name": "reach",
   "version": "1.0.1",
   "description": "safely retrieve nested object keys",
-  "author": "Colin Ihrig <cjihrig@gmail.com> (https://cjihrig.com/)",
-  "main": "lib/index.js",
+  "author": "Nathan Walston <nathanielwalston@gmail.com> (https://gitub.com/walston)",
+  "main": "dist/index.js",
   "homepage": "https://github.com/cjihrig/reach",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cjihrig/reach"
+    "url": "https://github.com/hart/reach"
   },
   "bugs": {
-    "url": "https://github.com/cjihrig/reach/issues"
+    "url": "https://github.com/hart/reach/issues"
   },
   "license": "MIT",
   "scripts": {
-    "test": "belly-button && lab -v -t 100 -a code"
+    "test": "belly-button && lab -v -t 100 -a code",
+    "build": "babel lib/index.js --out-file dist/index.js"
   },
   "engines": {
     "node": ">=4.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-preset-minify": "^0.4.3",
     "belly-button": "4.x.x",
     "code": "5.x.x",
     "lab": "14.x.x"
@@ -32,5 +37,6 @@
     "nested object",
     "safe lookup",
     "object path"
-  ]
+  ],
+  "dependencies": {}
 }
