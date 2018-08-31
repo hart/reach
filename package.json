@@ -1,5 +1,5 @@
 {
-  "name": "reach",
+  "name": "@hart/reach",
   "version": "1.0.1",
   "description": "safely retrieve nested object keys",
   "author": "Nathan Walston <nathanielwalston@gmail.com> (https://gitub.com/walston)",
